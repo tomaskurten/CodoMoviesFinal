@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle | CAC-MOVIES</title>
+    <title>Detalle | CODO MOVIES</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <nav class="navegacion">
-            <a class="anclaLogo" href="../index.html">
-                <i class="fas fa-film" aria-hidden="true"></i>
-                <span>CAC-Movies</span>
-            </a>
-            <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="../index#tendencias">Tendencias</a></li>
-                <li class="listaItem"><a class="linkNav" href="./registrarse.html">Registrarse</a></li>
-                <li class="listaItem"><a class="linkNav iniciarSesion" href="./iniciosesion.html">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
+        <script src="js/nav.js"></script>
     </header>
     <main id="mainDetalle" class="mainDetalle">
       <section class="detalle"  data-aos="zoom-in" >
         <div class="contenedorDetalle" >
             <div class="imgDetalle">
-                <img src="../assets/img/mario.jpg" alt="mario pelicula 2023">
+                <img src="assets/img/mario.jpg" alt="mario pelicula 2023">
             </div>
             <div class="textoDetalle">
                 <h1>The Super Mario Bros. Movie (2023)</h1>
@@ -103,24 +93,13 @@
       </section>
 
     </main>
-    <footer class="footer">
-        <nav class="navegacion">
-            <ul class="listaNav">
-                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
-                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
-                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
-                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
-            </ul>
-        </nav>
-        <a href="#main" class="flechaArriba">
-            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
-        </a>
-        <p class="aportes">Aporte realizado por coordinación JAVA-PHP Colaborador <a href="https://www.linkedin.com/in/gisele-milagros-gonzalez" target="_blank">Gisele M. Gonzalez</a></p>
-        <p class="video">Proyecto paso a paso <a href="https://youtu.be/1PgXE1c5jOM" target="_blank">Video Youtube</a></p>
-    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
+    <footer class="footer">
+        <script src="js/footer.js"></script>
+    </footer>
 </body>
 </html>

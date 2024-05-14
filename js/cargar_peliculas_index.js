@@ -18,19 +18,10 @@ const cargarPeliculasTendencia = async (page = 1) => {
     const tendenciasContainer = document.querySelector('.peliculasTendencia .peliculas');// Seleccionamos el contenedor de películas de tendencia en el DOM, la section que tiene dentro el div peliculas
     tendenciasContainer.innerHTML = '';// Limpiamos el contenido previo del contenedor
 
-    //* Iteramos sobre cada película obtenida y creamos los elementos HTML para mostrar la película teniendo que en cuenta que se debe respetar la siguiente estructura por los estilos:
-    /*<a href="./pages/detalle.html">
-                    <div class="pelicula">
-                        <img class="imgTendencia" src="./assets/img/peli_1.jpg" alt="The Beekeeper" loading="lazy">
-                        <div class="tituloPelicula">
-                            <h4>The Beekeeper</h4>
-                        </div>
-                    </div>
-      </a>*/
     movies.forEach(movie => {
         // creo el ancla
         const ancla = document.createElement('a');
-        ancla.href = './pages/detalle.html';
+        ancla.href = 'detalle.html';
         // creo el div pelicula
         const pelicula = document.createElement('div');
         pelicula.classList.add('pelicula');
@@ -67,10 +58,6 @@ const cargarPeliculasAclamadas = async () => {
     const movies = data.results; // Extraemos las películas de la respuesta
     const aclamadasContainer = document.querySelector('.aclamadas'); // Seleccionamos el contenedor de películas aclamadas en el DOM
     
-    // Iteramos sobre cada película obtenida para lograr la estructura de html que pongo a continuación:
-    /*<div class="peliculaItem">
-         <img class="imgAclamada" src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
-      </div>*/
     movies.forEach(movie => {
         // creo el div peliculaItem
         const peliculaItem = document.createElement('div');
